@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tp,doom,boom" />
+    <meta name="keywords" content="trabajo,practico,4" />
+    <meta name="author" content="Di Marco,Jose Nicolas" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <title>NUMEROS MAGICOS</title>
+  </head>
+  <body class="bg-dark text-light">
+    <main>
+      <div class="text-center">
+        <h1 class="display-1">Numeros Magicos</h1>
+        <button
+          class="btn btn-outline-primary"
+          id="btnComenzar"
+          onclick="comenzarJuego()"
+        >
+          Comenzar Juego
+        </button>
+        <hr />
+      </div>
+      <form>
+        <input
+          type="text"
+          placeholder="Ingrese su numero acá"
+          id="#inputNumero"
+        />
+
+        <input
+          type="submit"
+          value="Enviar"
+          class="btn btn-outline-danger"
+          onclick="obtenerInput()"
+        />
+      </form>
+      <div class="text-center">
+        <h5 class="display-5">INSTRUCCIONES DEL JUEGO</h5>
+        <p>
+          Para Iniciar Presionar el Boton "Comenzar Juego". </p>
+         <p>El sistema elegira un numero al azar entre el 0 y el 10</p>
+            
+        <p>si coincide con el numero ingresado seras el ganador de lo contrario podes volver a intentarlo
+        </p>
+        <p class="lead text-danger">BUENA SUERTE</p>
+      </div>
+    </main>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
